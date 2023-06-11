@@ -28,7 +28,7 @@ const Allorders = () => {
 
   const allOrders = [];
   const allPertiOrders = [];
-  const odd = []
+  const odd = [];
   if (orderData.length) {
     // orderData && orderData.map((oneUserOrder) => {
     //     console.log(oneUserOrder.order_data)
@@ -38,9 +38,9 @@ const Allorders = () => {
     console.log(orderData);
     for (let i = 0; i < orderData.length; i++) {
       const element = orderData[i].order_data;
-      element[0][1].email = orderData[i].email
-      console.log(orderData[i])
-      console.log(element)
+      element[0][1].email = orderData[i].email;
+      console.log(orderData[i]);
+      console.log(element);
       element.map((el) => {
         allOrders.push(el);
       });
@@ -62,11 +62,8 @@ const Allorders = () => {
   }
   console.log(odd);
   const handleOrderComplete = (data) => {
-    const confirmComplete = confirm("Order Completed?")
-    console.log(confirmComplete)
     console.log(data.id);
-
-  }
+  };
   return (
     <div>
       <div>
@@ -76,7 +73,7 @@ const Allorders = () => {
         <div className="row">
           {odd &&
             odd.map((el, index) => {
-              console.log(el)
+              console.log(el);
               return (
                 <>
                   <div className="col-12 col-md-6 col-lg-3">
@@ -90,8 +87,11 @@ const Allorders = () => {
                       <div className="card-header ">
                         <div className="w-100 text-center text-dark">
                           {index + 1}
-                        </div><hr />
-                        <div><b>From :</b> {el.email}</div>
+                        </div>
+                        <hr />
+                        <div>
+                          <b>From :</b> {el.email}
+                        </div>
                       </div>
 
                       <img
@@ -104,7 +104,8 @@ const Allorders = () => {
                         }}
                       />
                       <div className="card-body" style={{ height: "178px" }}>
-                        <h5 className="card-title text-dark">{el.name}</h5><hr />
+                        <h5 className="card-title text-dark">{el.name}</h5>
+                        <hr />
                         <div
                           className="container w-100 p-0"
                           style={{ height: "38px" }}
@@ -113,9 +114,16 @@ const Allorders = () => {
                           <span className="m-1 text-dark">* {el.size})</span>
                           <div className="text-dark d-inline ms-2 h-100 w-20 fs-5">
                             ₹{el.price}/-
-                          </div><hr />
+                          </div>
+                          <hr />
                           <div className="w-100">
-                            <button className="btn btn-outline-primary form-control " onClick={() => handleOrderComplete(el)} disabled>{el.orderNo}</button>
+                            <button
+                              className="btn btn-outline-primary form-control "
+                              onClick={() => handleOrderComplete(el)}
+                              disabled
+                            >
+                              {el.orderNo}
+                            </button>
                           </div>
                         </div>
                       </div>

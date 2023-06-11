@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import Navbar from "../components/Navbar";
+import { toast } from "react-toastify";
 export default function Signup() {
   const [credentials, setCredentials] = useState({
     name: "",

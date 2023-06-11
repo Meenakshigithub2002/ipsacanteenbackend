@@ -9,6 +9,7 @@ export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItems, setFoodItems] = useState([]);
   const [search, setSearch] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
   // const loadFoodItems = async () => {
   //   let response = await fetch("http://localhost:5000/api/auth/foodData", {
@@ -48,7 +49,19 @@ export default function Home() {
       setFoodItems(response);
     }
     getMydat();
-  }, [navigate]);
+  }, []);
+
+  const handleSearch = (data) => {
+    console.log(foodItems);
+    console.log(searchQuery);
+    let filterdFoodItems = foodItems.filter((el) => {
+      return el.name.toLowerCase().match(searchQuery);
+    });
+    setFoodItems(filterdFoodItems);
+  };
+  const clearFilters = () => {
+    window.location.reload();
+  };
 
   return (
     <div>
@@ -68,21 +81,21 @@ export default function Home() {
                 {/* justify-content-center, copy this <form> from navbar for search box */}
                 <input
                   className="form-control me-2 w-75 bg-white text-dark"
-                  type="search"
+                  type="text"
                   placeholder="Search in here..."
                   aria-label="Search"
-                  value={search}
+                  // value={search}
                   onChange={(e) => {
-                    setSearch(e.target.value);
+                    handleSearch(e.target.value);
+                    setSearchQuery(e.target.value);
+                    // setSearch(e.target.value);
                   }}
                 />
                 <button
                   className="btn text-white bg-danger"
-                  onClick={() => {
-                    setSearch("");
-                  }}
+                  onClick={clearFilters}
                 >
-                  X
+                  Clear Filters
                 </button>
               </div>
             </div>

@@ -6,7 +6,7 @@
 - Implemented features like authentication(register/login) and generation of unique token no., viewing food items, displaying cart using React.
 - The Database is managed using Mongodb with mongoose.
 <h3>3sdjfisjdf<//h3>
-
+<br />
 
 ![alt text](https://imgtr.ee/images/2023/06/11/Kci41.jpg)
 

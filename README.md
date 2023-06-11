@@ -7,7 +7,7 @@
 - The Database is managed using Mongodb with mongoose.
 
 
-![alt text](https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg)
+![alt text](https://imgtr.ee/images/2023/06/11/Kci41.jpg)
 
 ![alt text](https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg)
 

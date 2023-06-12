@@ -41,7 +41,7 @@
 
 ![alt text](https://imgtr.ee/images/2023/06/11/KcHi3.jpg)
 
-<h3>Your cartx<//h3>
+<h3>Your cart<//h3>
 <br >
 <br >
 

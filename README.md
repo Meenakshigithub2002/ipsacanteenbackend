@@ -11,18 +11,41 @@
 
 ![alt text](https://imgtr.ee/images/2023/06/11/Kci41.jpg)
 
+<h3>Login Page<//h3>
+<br >
+<br >
+
 ![alt text](https://imgtr.ee/images/2023/06/11/KcFoM.jpg)
+
+<h3>Home Page<//h3>
+<br >
+<br >
 
 ![alt text](https://imgtr.ee/images/2023/06/11/KcjXX.jpg)
 
+<h3>Food Items<//h3>
+<br >
+<br >
+
 ![alt text](https://imgtr.ee/images/2023/06/11/Kczxl.jpg)
+
+<h3>My orders<//h3>
+<br >
+<br >
 
 ![alt text](https://imgtr.ee/images/2023/06/11/KcPvV.jpg)
 
+<h3>Add New Itemx<//h3>
+<br >
+<br >
+
 ![alt text](https://imgtr.ee/images/2023/06/11/KcHi3.jpg)
+
+<h3>Your cartx<//h3>
+<br >
+<br >
 
 ![alt text](https://imgtr.ee/images/2023/06/11/Ku7m0.jpg)
 
-![alt text](https://imgtr.ee/images/2023/06/11/KcgyL.jpg)
 
 
